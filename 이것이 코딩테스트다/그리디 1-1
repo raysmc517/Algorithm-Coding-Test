@@ -1,0 +1,16 @@
+n, k = map(int, input().split())  # 입력
+m = 0                             # 횟수
+
+while True:
+     if n%k == 0:
+          n = n//k
+
+     elif n == 1:
+          break
+
+     else:
+          n -= 1
+
+     m += 1
+
+print(m)
